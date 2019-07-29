@@ -1,3 +1,5 @@
 csv2json
-pandas
-
+xmljson
+json2xml
+xmltodict
+xmlutils

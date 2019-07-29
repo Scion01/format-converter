@@ -1,0 +1,30 @@
+[
+    {
+        "code": "22",
+        "name": "das",
+        "dept": "sales",
+        "sal": "2300",
+        "location": "blr"
+    },
+    {
+        "code": "12",
+        "name": "ram",
+        "dept": "prod",
+        "sal": "2100",
+        "location": "pun"
+    },
+    {
+        "code": "14",
+        "name": "dev",
+        "dept": "sales",
+        "sal": "4300",
+        "location": "mum"
+    },
+    {
+        "code": "4",
+        "name": "yum",
+        "dept": "sales",
+        "sal": "3300",
+        "location": "blr"
+    }
+]
