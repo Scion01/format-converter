@@ -2,11 +2,13 @@ import sys
 from convert_script import *
 
 def initiate_exit_seq():
+    logger.debug("User left!")
     print("Exiting...Bye")
     sys.exit()
 
 def welcome_seq():
     print("--------WELCOME----------")
+    logger.debug("New user")
     print("The File formats supported: ",format_glob)
 
 def print_all_usages():
@@ -19,6 +21,7 @@ def print_all_usages():
 
 def parse_user_input(user_input):
     if(len(user_input) <=0):
+        logger.error("Invalid command")
         print("Invalid command! Find all the commands below: ")
         print_all_usages()
         return
@@ -32,6 +35,7 @@ def parse_user_input(user_input):
     elif (parts[0] == "support"):
         print(format_glob)
     elif(len(parts)<3):
+        logger.error("unidentified command!")
         print("Invalid command! Find all the commands below: ")
         print_all_usages() 
     elif(parts[0] == "convert"):
